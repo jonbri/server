@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ID=`sudo docker container ls | grep wip | awk '{print $1}'`
+
+sudo docker stop $ID
+

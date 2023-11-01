@@ -4,10 +4,13 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "docker-run": "./bin/docker-run",
+    "docker-stop": "./bin/docker-stop"
   },
   "devDependencies": {
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.10"
-  }
+  },
+  "license": "ISC"
 }
