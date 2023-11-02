@@ -13,5 +13,5 @@ const minutes = 5;
 setTimeout(() => {
   console.log("closing...");
   server.close();
-}, minmutes * 1000);
+}, minutes * 1000);
 
