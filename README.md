@@ -16,6 +16,12 @@ npx playwright test --ui-host=0.0.0.0 --ui-port=8080
 
 ## Docker
 
+User:
+```
+sudo groupapp docker
+sudo usermod -aG docker $USER
+```
+
 Run container:
 
 ```
