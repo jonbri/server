@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ID=`sudo docker container ls | grep wip | awk '{print $1}'`
+
+sudo docker exec -it $ID bash
+
+
