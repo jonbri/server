@@ -15,5 +15,8 @@
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.10"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "serve-handler": "^6.1.5"
+  }
 }

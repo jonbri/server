@@ -1,12 +1,10 @@
+const handler = require('serve-handler');
 const http = require('http');
 
-const port = 4000;
-
 const server = http.createServer((request, response) => {
-  response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.end('Hello World\n')
+  return handler(request, response);
 });
 
-server.listen(port);
-
-console.log('Server running at http://localhost:' + port);
+server.listen(4000, () => {
+  console.log('Running at http://localhost:4000');
+});

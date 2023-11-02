@@ -1,7 +1,11 @@
 #!/bin/bash
 
-ID=`sudo docker container ls | grep wip | awk '{print $1}'`
+CONTAINER_NAME=$1
+if [ -z "$CONTAINER_NAME" ]; then
+    CONTAINER_NAME="wip"
+fi
+
+ID=`sudo docker container ls | grep $CONTAINER_NAME | awk '{print $1}'`
 
 sudo docker exec -it $ID bash
-
 
