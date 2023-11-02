@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Start local server
-        run: yarn start
+        run: yarn start&
       - name: Run your tests
         run: npx playwright test
 
