@@ -9,8 +9,9 @@ server.listen(4000, () => {
   console.log('Running at http://localhost:4000');
 });
 
+const minutes = 5;
 setTimeout(() => {
   console.log("closing...");
   server.close();
-}, 15000);
+}, minmutes * 1000);
 
