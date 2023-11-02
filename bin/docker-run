@@ -5,6 +5,6 @@ if [ -z "$CONTAINER_NAME" ]; then
     CONTAINER_NAME="wip"
 fi
 
-sudo docker build --tag $CONTAINER_NAME .
-sudo docker run -p 4000:4000 $CONTAINER_NAME
+docker build --tag $CONTAINER_NAME .
+docker run -p 4000:4000 $CONTAINER_NAME
 

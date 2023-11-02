@@ -18,16 +18,16 @@ npx playwright test --ui-host=0.0.0.0 --ui-port=8080
 
 User:
 ```
-sudo groupapp docker
-sudo usermod -aG docker $USER
+groupapp docker
+usermod -aG docker $USER
 ```
 
 Run container:
 
 ```
 # run Dockerfile directly
-sudo docker stop <container-id>
-sudo docker run -p 4000:4000 $(sudo docker build -q .)
+docker stop <container-id>
+docker run -p 4000:4000 $(docker build -q .)
 ```
 
 [DockerHub](https://hub.docker.com/repository/docker/jonbri/server/general)
@@ -35,15 +35,15 @@ sudo docker run -p 4000:4000 $(sudo docker build -q .)
 Image management:
 ```sh
 # login
-echo "your-password-here" | sudo docker login --username jonbri --password-stdin
+echo "your-password-here" | docker login --username jonbri --password-stdin
 
 # build image
-sudo docker build -t jonbri/server .
+docker build -t jonbri/server .
 
 # run image
-sudo docker run -p 4000:4000 jonbri/server:0.0.1
+docker run -p 4000:4000 jonbri/server:0.0.1
 
 # push
-sudo docker push jonbri/server
+docker push jonbri/server
 ```
 
